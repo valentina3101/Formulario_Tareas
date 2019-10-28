@@ -1,0 +1,12 @@
+<html>
+<body>
+
+<form method="POST">
+  {{ form.as_p }}
+  {% csrf_token %}
+  <input type="submit" value="guardar" />
+  <button type="submit" value= "Editar" </button> 
+
+</form>
+</body>
+</html>

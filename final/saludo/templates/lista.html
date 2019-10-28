@@ -1,0 +1,11 @@
+
+<h1>LISTA</h1>
+<ul>
+{% for tarea in Lista_tareas %}
+<li> {% if tarea.realizada %}<strike>{% endif %} {{tarea.tarea}} {% if tarea.realizada %}</strike>{% endif %}
+
+  <a href= "tarea/{{ tarea.id }}">editar</a> 
+</li>
+
+{% endfor %}
+</ul>
